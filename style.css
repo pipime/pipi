@@ -63,11 +63,21 @@ main{
 }
 
 /* タブレット縦置きサイズ(768px)程度の画面の大きさ以下に適用される設定です */
-@media screen and (max-width:768px) {
-  .step-box {
-    width: 90%;
+@media screen and (max-width: 768px) {
+
+  main{
+  width: 100%;
+  margin: 50px auto;
 }
-*{
-  margin: 20px;
+.step-box {
+  float: none;
+  width: 90%;
   box-sizing: border-box;
+  margin: 20px auto;
+  /*margin-left: auto;
+  margin-right: auto;*/
+}
+
+.step-box:last-child{
+  margin: 20px auto;
 }
